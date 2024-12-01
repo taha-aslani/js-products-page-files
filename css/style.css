@@ -17,3 +17,51 @@ header {
   font-weight: 100;
   letter-spacing: 1px;
 }
+
+.utilities {
+  width: calc(100vw - 100px);
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.utilities > * {
+  margin-bottom: 20px;
+}
+
+.input {
+  outline: none;
+  padding: 3px;
+  width: 20%;
+  background-color: transparent;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+.input::placeholder {
+  font-size: 110%;
+  color: rgba(0, 0, 0, 0.619);
+}
+
+.category-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 2px 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 3px;
+  border: 2px solid blue;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button.active {
+  background-color: white;
+  color: blue;
+}
+
+.search {
+  margin-left: 5px;
+}
