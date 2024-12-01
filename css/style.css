@@ -5,10 +5,13 @@
 
 header {
   background-color: rgb(58, 58, 255);
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 15px 15px 15px 15px;
   width: calc(100vw - 100px);
   border-radius: 10px;
+  position: sticky;
+  top: sticky;
+  top: 10px;
 }
 
 .site-name {
@@ -21,7 +24,7 @@ header {
 .utilities {
   width: calc(100vw - 100px);
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .utilities > * {
@@ -64,4 +67,27 @@ button.active {
 
 .search {
   margin-left: 5px;
+}
+
+main {
+  display: grid;
+  width: calc(100vw - 100px);
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  padding: 30px 0;
+  grid-template-rows: auto;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 11px;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-image {
+  width: 100%;
+  display: block;
+  border-radius: 3px;
 }
