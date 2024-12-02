@@ -84,10 +84,29 @@ main {
   padding: 20px;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.2s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card > * {
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .card-image {
   width: 100%;
   display: block;
   border-radius: 3px;
+}
+
+.card-price {
+  background-color: blueviolet;
+  display: inline;
+  padding: 5px;
+  border-radius: 4px;
+  color: white;
 }
