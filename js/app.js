@@ -10,3 +10,23 @@ function btnClickFunction() {
   });
   this.classList.add('active');
 }
+
+const products = document.querySelectorAll('.product');
+
+function searchName() {
+  const searchValue = document
+    .querySelector('#namesearch')
+    .value.toLowerCase()
+    .trim();
+
+  products.forEach((prod) => {
+    let productName = prod.children[1].innerText.toLowerCase();
+    if (productName.includes(searchValue)) {
+      prod.style.display = 'block';
+    } else {
+      prod.style.display = 'none';
+    }
+  });
+}
+
+document.querySelector('#namesearch').addEventListener('keyup', searchName);
