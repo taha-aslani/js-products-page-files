@@ -109,3 +109,45 @@ main {
   border-radius: 4px;
   color: white;
 }
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+  margin: 20px auto;
+}
+
+.social {
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 8px 8px 8px #cbced1, -8px -8px 8px #fff;
+  transition: background linear 0.2s;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social img {
+  width: 25px;
+}
+
+.social:hover {
+  cursor: pointer;
+}
+
+.github:hover {
+  background-color: #9a9a9a;
+}
+.github:hover img {
+  color: #fff;
+}
+
+.email:hover img {
+  color: #fff;
+}
+
+.email:hover {
+  background-color: #02c8db;
+}
