@@ -13,7 +13,6 @@ function btnClickFunction(event) {
     if (btn.classList.contains('active')) btn.classList.remove('active');
   });
   this.classList.add('active');
-  console.log(event);
   switch (event.target.id) {
     case 'allbtn':
       products.forEach((product) => {
