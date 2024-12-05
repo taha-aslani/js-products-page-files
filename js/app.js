@@ -65,3 +65,27 @@ function searchName() {
   });
 }
 document.querySelector('#namesearch').addEventListener('keyup', searchName);
+
+function searchPrice(event) {
+  const inputPrice = document.getElementById('pricesearch').value;
+
+  products.forEach((product) => {
+    if (!inputPrice) {
+      product.style.display = 'block';
+      return;
+    }
+    let productPrice = product.children[2].innerText;
+    console.log(parseInt(productPrice.split(' ')[1]), parseInt(inputPrice));
+    if (parseInt(productPrice.split(' ')[1]) <= parseInt(inputPrice)) {
+      product.style.display = 'block';
+    } else if (parseInt(inputPrice) == 0) {
+      product.style.display = 'block';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+}
+
+document
+  .getElementById('pricesearchbtn')
+  .addEventListener('click', searchPrice);

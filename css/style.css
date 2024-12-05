@@ -10,7 +10,6 @@ header {
   width: calc(100vw - 100px);
   border-radius: 10px;
   position: sticky;
-  top: sticky;
   top: 10px;
 }
 
